@@ -6,31 +6,39 @@
 
         <item
             android:id="@+id/inbox"
+            android:icon="@drawable/item_icon"
+            android:title="Cox's Bazar" />
 
+        </group>
 
-            android:icon="@drawable/msg_nav"
-            android:title="Messages" />
+    <group
+        android:id="@+id/my_id4">
 
         <item
             android:id="@+id/starred"
+            android:icon="@drawable/item_icon"
+            android:title="Kuakata" />
 
-            android:icon="@drawable/discover_nav"
-            android:title="Discover" />
+        </group>
+
+    <group
+        android:id="@+id/my_id5">
 
         <item
             android:id="@+id/sent_mail"
+            android:icon="@drawable/item_icon"
+            android:title="Inani" />
+</group>
 
-            android:icon="@drawable/media_nav"
-            android:title="Media" />
-
+    <group
+        android:id="@+id/my_id6">
         <item
             android:id="@+id/drafts"
+            android:icon="@drawable/item_icon"
+            android:title="Himchori" />
 
-            android:icon="@drawable/contacts_nav"
-            android:title="Friends" />
+        </group>
 
-
-    </group>
 
 <group android:id="@+id/my_id2"
     >
@@ -38,22 +46,26 @@
             <item
                 android:id="@+id/allmail"
 
-                android:icon="@drawable/hotspot_nav"
-                android:title="Create HyperNet" />
+                android:icon="@drawable/item_icon"
+                android:title="Moheshkhali" />
+           </group>
+
+    <group
+        android:id="@+id/my_id7">
             <item
                 android:id="@+id/trash"
 
-                android:icon="@drawable/instant_transfer_nav"
-                android:title="Instant Transfer" />
-
+                android:icon="@drawable/item_icon"
+                android:title="Saintmartin" />
 </group>
+
     <group android:id="@+id/my_id3"
        >
         <item
             android:id="@+id/spam"
 
-            android:icon="@drawable/settings_nav"
-            android:title="Settings" />
+            android:icon="@drawable/item_icon"
+            android:title="Potenga" />
     </group>
 
 </menu>

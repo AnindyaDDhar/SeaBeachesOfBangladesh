@@ -128,10 +128,10 @@ public class MainActivity extends AppCompatActivity {
 
                     //Rest of the item just show toast;
                     case R.id.trash:
-                        Toast.makeText(getApplicationContext(),"Trash Selected",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"SAINTMARTIN Selected",Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.spam:
-                        Toast.makeText(getApplicationContext(),"Spam Selected",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"POTENGA Selected",Toast.LENGTH_SHORT).show();
                         return true;
                     default:
                         Toast.makeText(getApplicationContext(),"Somethings Wrong",Toast.LENGTH_SHORT).show();

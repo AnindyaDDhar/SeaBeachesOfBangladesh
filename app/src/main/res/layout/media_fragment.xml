@@ -9,10 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Media"
+        android:text="INANI BEACH"
         android:textSize="26dp"
         android:textStyle="bold"/>
-
-
 
 </RelativeLayout>
