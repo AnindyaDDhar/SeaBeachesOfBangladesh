@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Discover Selected",Toast.LENGTH_SHORT).show();
                 discover_fragment fragment1 = new discover_fragment();
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.slide_in_up, R.anim.slide_up_out);
                 fragmentTransaction.replace(R.id.frame,fragment1);
                 fragmentTransaction.commit();
             }
