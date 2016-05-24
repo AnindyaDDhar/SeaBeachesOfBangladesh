@@ -10,6 +10,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="app_black_transparent">#97000000</color>
 
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>
     <color name="bg_screen2">#20d2bb</color>

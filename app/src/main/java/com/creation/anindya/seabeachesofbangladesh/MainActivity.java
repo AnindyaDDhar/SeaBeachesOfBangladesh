@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Defining Variables
     private Toolbar toolbar;
-    private CardView cardView;
+    private CardView cardView, cardView1;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     MenuItem mPreviousMenuItem;
@@ -59,6 +59,22 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
             }
         });
+
+        cardView1 = (CardView) findViewById(R.id.cardview1);
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //implement onClick
+                android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                Toast.makeText(getApplicationContext(),"Discover Selected",Toast.LENGTH_SHORT).show();
+                hypernet_fragment fragment2 = new hypernet_fragment();
+                fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.slide_in_up, R.anim.slide_up_out);
+                fragmentTransaction.replace(R.id.frame,fragment2);
+                fragmentTransaction.commit();
+            }
+        });
+
 
         //Initializing NavigationView
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
