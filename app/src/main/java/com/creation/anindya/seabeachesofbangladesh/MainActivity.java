@@ -12,6 +12,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Defining Variables
     private Toolbar toolbar;
+    private CardView cardView;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     MenuItem mPreviousMenuItem;
@@ -41,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        cardView = (CardView) findViewById(R.id.cardview);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //implement onClick
+                /*Toast.makeText(getApplicationContext(),"Somethings Wrong",Toast.LENGTH_SHORT).show();*/
+                android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                Toast.makeText(getApplicationContext(),"Discover Selected",Toast.LENGTH_SHORT).show();
+                discover_fragment fragment1 = new discover_fragment();
+                fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frame,fragment1);
+                fragmentTransaction.commit();
+            }
+        });
 
         //Initializing NavigationView
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
